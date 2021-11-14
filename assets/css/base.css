@@ -1,0 +1,94 @@
+:root {
+    --img-logo-mp3: url(https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg);
+    --side-bar-bg: #411465;
+    --bg-header: #37075d;
+    --text-white: #fff;
+    --text-content-title: #fff;
+    --text-player-title: #fff;
+    --text-primary: #dadada;
+    --text-secondary: hsla(0,0%,100%,0.5);
+    --text-hover: #fff;
+    --text-sidebar-color: #dadada;
+    --text-header-color: #dadada;
+    --descript-color: #d9d9d9;
+    --border-primary: hsla(0,0%,100%,0.1);
+    --bg-primary: hsla(0,0%,100%,0.1);
+    --bg-header-drop: #6a39af;
+    --primary-color: #ed2b91;
+    --primary-color-hover: #fe63da;
+
+
+    --header-with-search-height: 70px;
+    --sidebar-width: calc(100% - 240px);  
+    --player-height: 90px;  
+    --offset-x-second: calc(0px - ((230px - (230px * var(--scale-rate-second))) / 2 + 20px));
+    --offset-x-third: calc(0px - ((230px - (230px * var(--scale-rate-third))) / 2 + 40px));
+    --scale-rate-second: calc(196 / 230);
+    --scale-rate-third: calc(162 / 230);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    line-height: 1.6rem;
+    font-family: sans-serif;
+}
+
+
+
+/* Button */
+.btn {
+    background-color: transparent;
+    min-width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    outline: none;
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 0;
+    border-color: transparent;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    color: var(--text-sidebar-color);
+}
+
+.btn--primary {
+    color: var(--text-primary) !important;
+    background-color: var(--primary-color) !important;
+    opacity: 1 !important;
+}
+
+.btn--with-icon {
+    padding: 0 22px;
+}
+
+.btn--disable {
+    opacity: 0.3 !important;
+    color: #d1d1d1 !important;
+    cursor: default;
+    filter: brightness(1) !important;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

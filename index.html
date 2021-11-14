@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zing MP3 | Nghe tải nhạc chất lượng cao trên desktop, mobile và TV</title>
+    <link rel="stylesheet" href="./assets/css/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="sidebar__brand">
+                <a href="" class="sidebar__brand-logo"></a>                
+            </div>
+
+            <ul class="sidebar__nav-menu">
+                <li class="sidebar__nav-item active">
+                    <a href="" class="sidebar__nav-item-link">
+                        <i class="sidebar__nav-item-icon fab fa-napster"></i>
+                       <span>Cá Nhân</span>
+                    </a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="" class="sidebar__nav-item-link">
+                        <i class="sidebar__nav-item-icon far fa-dot-circle"></i>
+                       <span>Khám Phá</span>
+                    </a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="" class="sidebar__nav-item-link">
+                        <i class="sidebar__nav-item-icon ti-bar-chart"></i>
+                       <span>#zingchart</span>
+                    </a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="" class="sidebar__nav-item-link">
+                        <i class="sidebar__nav-item-icon fas fa-podcast"></i>
+                       <span>Radio</span>
+                       <img src="https://zjs.zadn.vn/zmp3-desktop/dev/147506/static/media/live-tag.e25dd240.svg" alt="">
+                    </a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="" class="sidebar__nav-item-link">
+                        <i class="sidebar__nav-item-icon ti-layout-media-overlay"></i>
+                       <span>Theo Dõi</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar__nav-wrap">
+                <ul class="sidebar__nav-menu">
+                    <li class="sidebar__nav-item">
+                        <a href="" class="sidebar__nav-item-link">
+                            <i class="sidebar__nav-item-icon ti-music-alt"></i>
+                            <span>Nhạc Mới</span>
+                         </a>
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <a href="" class="sidebar__nav-item-link">
+                            <i class="sidebar__nav-item-icon fas fa-icons"></i>
+                            <span>Thể Loại</span>
+                         </a>
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <a href="" class="sidebar__nav-item-link">
+                            <i class="sidebar__nav-item-icon far fa-star"></i>
+                            <span>Top 100</span>
+                         </a>
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <a href="" class="sidebar__nav-item-link">
+                            <i class="sidebar__nav-item-icon fas fa-compact-disc"></i>
+                            <span>MV</span>
+                         </a>
+                    </li>
+                </ul>
+
+                <!-- Vip banner -->
+                <div class="sidebar__nav-wrap__vip-banner">
+                    <span>Nghe nhạc không quảng cáo cùng kho nhạc VIP</span>
+                    <a href="" class="sidebar__nav-wrap__vip-banner-btn btn">NÂNG CẤP VIP</a>
+                </div>
+
+                <!-- Library -->
+                <div class="sidebar__nav-wrap__lib">
+                    <div class="sidebar__nav-wrap__lib-header">
+                        <span class="sidebar__nav-wrap__lib-header-label">THƯ VIỆN</span>
+                        <div class="sidebar__nav-wrap__lib-header-icon">
+                            <i class="ti-pencil"></i>
+                        </div>
+                    </div>
+                    <ul class="sidebar__nav-wrap__lib-list">
+                        <li class="sidebar__nav-wrap__lib-item">
+                            <a href="" class="sidebar__nav-wrap__lib-item-link">
+                                <i class="sidebar__nav-wrap__lib-icon">
+                                    <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.0.13/static/media/my-song.cf0cb0b4.svg">
+                                </i>
+                                <span class="sidebar__nav-wrap__lib-title">Bài hát</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__nav-wrap__lib-item">
+                            <a href="" class="sidebar__nav-wrap__lib-item-link">
+                                <i class="sidebar__nav-wrap__lib-icon">
+                                    <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.0.13/static/media/my-playlist.7e92a5f0.svg">
+                                </i>
+                                <span class="sidebar__nav-wrap__lib-title">Playlist</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__nav-wrap__lib-item">
+                            <a href="" class="sidebar__nav-wrap__lib-item-link">
+                                <i class="sidebar__nav-wrap__lib-icon">
+                                    <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.0.13/static/media/my-history.374cb625.svg">
+                                </i>
+                                <span class="sidebar__nav-wrap__lib-title">Gần đây</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Add Playlist -->
+            <div class="sidebar__add-playlist">
+                <button class="sidebar__add-playlist-btn btn">
+                    <i class="sidebar__add-playlist-icon ti-plus"></i>
+                    <span>Tạo Playlist mới</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Main -->
+        <div id="main" style="background-image: url(https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/theme-background/zma.svg);">
+            <div class="main__wrap">
+                <!-- Header -->
+                <!-- Change background color when scrolling (add header--onscroll) -->
+                <div id="header" class="grid header--onscroll">
+                    <div class="row header-wrap">
+                        <div class="header__search-wrap">
+                            <!-- Btn -->
+                            <button class="header__prev-btn btn">
+                                <i class="fas fa-long-arrow-alt-left"></i>
+                            </button>
+                            <button class="header__next-btn btn btn--disable">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </button>
+
+                            <!-- Search -->
+                            <div class="header__search-main">
+                                <button class="header__search-btn btn">
+                                    <i class="ti-search header__search-icon"></i>
+                                </button>
+                                <input type="text" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV...">
+                            </div>
+                        </div>
+
+                        <div class="header__items-wrap">
+                            <button class="header__item btn">
+                                <i class="header__item-icon fas fa-tshirt"></i>
+                                <div class="header__item-label">
+                                    <span>Chủ đề</span>
+                                </div>
+                            </button>
+                            
+                            <button class="header__item btn">
+                                <input id="up-button" type="file" accept="audio/*" multiple="" style="display: none;">
+                                <label for="up-button">
+                                    <i class="header__item-icon fas fa-upload"></i>
+                                </label>
+                                <div class="header__item-label">
+                                    <span>Tải lên</span>
+                                </div>
+                            </button>
+
+                            <!-- add class active when click -->
+                            <button class="header__item btn">
+                                <i class="header__item-icon ti-settings"></i>
+
+                                <div class="header__item-label">
+                                    <span>Cài đặt</span>
+                                </div>
+
+                                <div class="header__item-wrap">
+                                    <ul class="header__item-wrap-list">
+                                        <li class="header__item-wrap-item">
+                                            <a href="" class="header__item-wrap-link">
+                                                <i class="fas fa-ban header__item-wrap-icon"></i>
+                                                <span>Danh sách chặn</span>
+                                            </a>
+                                        </li>
+                                        <li class="header__item-wrap-item">
+                                            <a class="header__item-wrap-link">
+                                                <i class="ti-pulse header__item-wrap-icon"></i>
+                                                <span>Chât lượng nhạc</span>
+                                                <i class="ti-angle-right header__item-wrap-icon"></i>
+                                            </a>
+                                            <!-- aside menu -->
+                                            <div class="header__item-wrap__menu-aside">
+                                                <ul class="aside-list">
+                                                    <!-- add class active when choose quality and remove other -->
+                                                    <li class="aside-item active">
+                                                        <div class="quality-wrap">
+                                                            <h3>SQ • 128</h3>
+                                                            <span>Giảm sử dụng dữ liệu cho các kết nối chậm hơn.</span>
+                                                        </div>
+                                                        <i class="ti-check header__item-wrap-icon"></i>
+                                                    </li>
+                                                    <li class="aside-item">
+                                                        <div class="quality-wrap">
+                                                            <h3>HD • 320</h3>
+                                                            <span>Kết hợp tốt nhất giữ việc sử dụng dữ liệu và chất lượng âm thanh.</span>
+                                                        </div>
+                                                        <i class="ti-check header__item-wrap-icon"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="header__item-wrap-item">
+                                            <a class="header__item-wrap-link">
+                                                <i class="far fa-play-circle header__item-wrap-icon"></i>
+                                                <span>Trình phát nhạc</span>
+                                                <i class="ti-angle-right header__item-wrap-icon"></i>
+                                            </a>
+                                            <!-- aside menu -->
+                                            <div class="header__item-wrap__menu-aside">
+                                                    <!-- add class active when toggle on -->
+                                                <div class="player-wrap active">
+                                                    <span>Luôn phát nhạc toàn màn hình</span>
+                                                    <div class="toggle-wrap">
+                                                        <i class="header__item-wrap-icon fas fa-toggle-on toggle-on"></i>
+                                                        <i class="header__item-wrap-icon fas fa-toggle-off toggle-off"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="header__item-wrap-list">
+                                        <li class="header__item-wrap-item">
+                                            <a href="" class="header__item-wrap-link">
+                                                <i class="ti-info-alt header__item-wrap-icon"></i>
+                                                <span>Giới thiệu</span>
+                                            </a>
+                                        </li>
+                                        <li class="header__item-wrap-item">
+                                            <a href="" class="header__item-wrap-link">
+                                                <i class="fab fa-font-awesome-flag header__item-wrap-icon"></i>
+                                                <span>Góp ý</span>
+                                            </a>
+                                        </li>
+                                        <li class="header__item-wrap-item">
+                                            <a href="" class="header__item-wrap-link">
+                                                <i class="fas fa-phone-alt header__item-wrap-icon"></i>
+                                                <span>Liên hệ</span>
+                                            </a>
+                                        </li>
+                                        <li class="header__item-wrap-item">
+                                            <a href="" class="header__item-wrap-link">
+                                                <i class="fas fa-ad header__item-wrap-icon"></i>
+                                                <span>Quảng cáo</span>
+                                            </a>
+                                        </li>
+                                        <li class="header__item-wrap-item">
+                                            <a href="" class="header__item-wrap-link">
+                                                <i class="far fa-file-alt header__item-wrap-icon"></i>
+                                                <span>Thỏa thuận sử dụng</span>
+                                            </a>
+                                        </li>
+                                        <li class="header__item-wrap-item">
+                                            <a href="" class="header__item-wrap-link">
+                                                <i class="fas fa-shield-virus header__item-wrap-icon"></i>
+                                                <span>Chính sách bảo mật</span>
+                                            </a>
+                                        </li>                                    
+                                    </ul>
+                                </div>
+                            </button>
+                            
+                            <button class="header__item btn header__item--user" style="background-image: url(https://s120-ava-talk.zadn.vn/6/0/8/d/109/120/8a8ce0ca6dcbaa0b8f5f101c9e638a78.jpg);">
+                            </button>
+                        </div>
+                    </div>
+                </div>    
+
+                <!-- Content -->
+                <!-- Start: Tab User -->
+                <div class="content-container active">
+                    <div id="tab-user">
+                        <!-- User Profile -->
+                        <div class="user-profile">
+                            <img class="user-profile__avt" src="https://s120-ava-talk.zadn.vn/6/0/8/d/109/120/8a8ce0ca6dcbaa0b8f5f101c9e638a78.jpg)" alt="">                                
+                            <h3 class="user-profile__title">Họa Mi</h3>
+                            <div class="user-profile__btn-wrap">
+                                <button class="user-profile__btn btn">NÂNG CẤP VIP</button>
+                                <button class="user-profile__btn btn">NHẬP CODE VIP</button>
+                                <button class="user-profile__btn btn"><span>...</span></button>
+                            </div>
+                        </div>
+
+                        <!-- User Navbar -->
+                        <div class="user-navbar">
+                            <ul class="user-navbar__list">
+                                <!-- add class active when click -->
+                                <li data-index = 0 class="user-navbar__item active">TỔNG QUAN</li>
+                                <li data-index = 1 class="user-navbar__item">BÀI HÁT</li>
+                                <li data-index = 2 class="user-navbar__item">PLAYLIST</li>
+                                <li data-index = 3 class="user-navbar__item">NGHỆ SĨ</li>
+                                <li data-index = 4 class="user-navbar__item">ALBUM</li>
+                                <li data-index = 5 class="user-navbar__item">MV</li>
+                                <li data-index = 6 class="user-navbar__item">TẢI LÊN</li>
+                            </ul>
+                        </div>
+
+                        <!-- User Content -->
+                        <!-- Start: Overview -->
+                        <div class="user-content active">
+                            <div class="grid wide">
+                                <div class="user-content__section">
+                                    <!-- header -->
+                                    <div class="row user-content__header">
+                                        <div class="user-content__header__title-wrap">
+                                            <h3 class="user-content__header__title">Bài Hát</h3>
+                                            <i class="ti-angle-right"></i>
+                                        </div>
+                                        <div class="user-content__header__btn-wrap">
+                                            <button class="btn upload-btn user-content__header__btn">
+                                                <input id="upload-btn" type="file" accept="audio/*" multiple="" style="display: none;">
+                                                <label for="upload-btn">
+                                                    <i class="header__item-icon fas fa-upload"></i>
+                                                    <span>TẢI LÊN</span>
+                                                </label>
+                                            </button>
+                                            <button class="btn playAll-btn btn--primary user-content__header__btn">
+                                                <i class="fas fa-play"></i>
+                                                <span>PHÁT TẤT CẢ</span>
+                                            </button>
+                                        </div>
+                                    </div>
+    
+                                    <!-- Main -->
+                                    <div class="user-content__main row">
+                                        <div class="col l-4 user-content__main__slider">
+                                                <div class="container__slide-show">
+                                                    <div class="container__slide-item first">
+                                                        <div style="background: url('./assets/img/HoaNoKhongMau.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                                    </div>
+                                                    <div class="container__slide-item second">
+                                                        <div style="background: url('./assets/img/BuonLamChiEmOi.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                                    </div>
+                                                    <div class="container__slide-item third">
+                                                        <div style="background: url('./assets/img/NhuNhungPhutBanDau.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                                    </div>
+                                                    <div class="container__slide-item fourth">
+                                                        <div style="background: url('./assets/img/HueTinhYeuCuaToi.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                                    </div>
+                                                    <div class="container__slide-item fourth">
+                                                        <div style="background: url('./assets/img/KeoBongGon.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                                    </div>
+                                                </div>  
+                                        </div>
+                                        <div class="col l-8 user-content__main__playlist">
+                                            <ul class="user__playlist">
+                                                
+                                            </ul>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="user-content__section" style="height:800px;">
+                                   <!-- header -->
+                                    <div class="row user-content__header">
+                                        <div class="user-content__header__title-wrap">
+                                            <h3 class="user-content__header__title">Playlist</h3>
+                                            <i class="ti-angle-right"></i>                                            
+                                        </div>
+                                        <div class="user-content__header__btn-wrap">
+                                            <button class="btn btn--disable playlist--prevBtn user-content__header__btn">
+                                                <i class="ti-angle-left"></i>
+                                            </button>
+                                            <button class="btn playlist--nextBtn user-content__header__btn">
+                                                <i class="ti-angle-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>                        
+                        </div>
+                        <!-- End: Overview -->
+    
+                        <!-- Start: Songs -->
+                        <div class="user-content">
+                            <div class="grid wide">
+                                <div class="user-content__section">
+                                    <!-- header -->
+                                    <div class="row user-content__header">
+                                        <div class="user-content__header__title-wrap">
+                                            <h3 class="user-content__header__title">Bài Hát</h3>
+                                        </div>
+                                        <div class="user-content__header__btn-wrap">
+                                            <button class="btn upload-btn user-content__header__btn">
+                                                <input id="upload-btn" type="file" accept="audio/*" multiple="" style="display: none;">
+                                                <label for="upload-btn">
+                                                    <i class="header__item-icon fas fa-upload"></i>
+                                                    <span>TẢI LÊN</span>
+                                                </label>
+                                            </button>
+                                            <button class="btn playAll-btn btn--primary user-content__header__btn">
+                                                <i class="fas fa-play"></i>
+                                                <span>PHÁT TẤT CẢ</span>
+                                            </button>
+                                        </div>
+                                    </div>
+    
+                                    <!-- Main -->
+                                    <div class="row heading">
+                                        <div class="col l-12">
+                                            <span class="left">BÀI HÁT</span>
+                                            <span class="">THỜI GIAN</span>
+                                        </div>                                  
+                                    </div>
+                                    <div class="user-content__main user-songs row">
+                                        <div class="col l-12 user-content__main__playlist">                                            
+                                            <ul class="user__playlist">
+                                                
+                                            </ul>    
+                                        </div>
+                                    </div>
+                                </div>                  
+                            </div>             
+                        </div>
+                        <!-- End: Songs -->
+                    </div>   
+
+                </div>
+                <!-- End: Tab User -->
+
+                <!-- Start: Tab Discover -->
+                <div class="content-container">
+
+                </div>
+                <!-- End: Tab Discover -->
+
+                <!-- Start: Tab zingchart -->
+                <div class="content-container">
+
+                </div>
+                <!-- End: Tab zingchart -->
+
+                <!-- Start: Tab Radio -->
+                <div class="content-container">
+
+                </div>
+                <!-- End: Tab Radio -->
+
+                <!-- Start: Tab Follow -->
+                <div class="content-container">
+
+                </div>
+                <!-- End: Tab Follow -->
+            </div>
+        
+        </div>
+
+        <!-- Player -->
+        <!-- add class playing when audio play -->
+        <div id="player" class="" style="background-image: url(https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/theme-player/zma.png);">
+            <div class="dashboard">
+                <div class="dashboard-left">
+                    <!-- CD -->
+                    <div class="cd">
+                        <div class="cd-thumb" style="background-image:url('./assets/img/BuonLamChiEmOi.jpg')"></div>
+                    </div>
+    
+                    <!-- Song wrap-->
+                    <div class="songs-wrap">
+                        <div class="songs-info">
+                            <h2>Buồn Làm Chi Em Ơi</h2>
+                            <h5>Hoài Lâm</h5>
+                        </div>
+                        <div class="songs-actions">
+                            <!-- add class active when like -->
+                            <div class="songs-actions-like active">
+                                <i class="far fa-heart heart-off"></i>
+                                <i class="fas fa-heart heart-on"></i>
+                            </div>
+                            <div class="songs-actions-bonus">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+                    <!-- Control -->
+                <div class="control-wrap">
+                    <div class="control">
+                        <!-- add class active in button when random or repeat -->
+                        <button class="btn btn-random ">
+                            <i class="ti-control-shuffle"></i>
+                            </button>    
+                        <button class="btn btn-prev">
+                            <i class="ti-control-skip-backward"></i>
+                        </button>
+                        <button class="btn btn-toggle-play">
+                            <i class="far fa-pause-circle icon-pause"></i>
+                            <i class="far fa-play-circle icon-play"></i>
+                        </button>
+                        <button class="btn btn-next">
+                            <i class="ti-control-skip-forward"></i>
+                        </button>                                    
+                        <button class="btn btn-repeat ">
+                            <i class="ti-loop"></i>
+                        </button>      
+                    </div>
+
+                    <!-- Time range -->
+                    <div class="time">
+                        <div class="curTime">0:00</div>
+                        <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                        <div class="durationTime">0:00</div>
+                    </div>
+                </div>
+
+                <div class="dashboard-right">
+                    <div class="tool-wrap">
+                        <button class="tool-btn btn">
+                            <i class="fas fa-compact-disc"></i>
+                        </button>
+                        <button class="tool-btn btn">
+                            <i class="ti-align-center"></i>
+                        </button>
+                        <button class="tool-btn btn">
+                            <i class="far fa-window-restore"></i>
+                        </button>
+                        <!-- volume -->
+                        <div class="vol-control">
+                            <button class="vol-btn btn">
+                              <i class="fas fa-volume-off voloff-icon"></i>
+                              <i class="fas fa-volume-up volon-icon"></i>
+                            </button>
+                            <input id="volume" class="volume" type="range" value="75" step="1" min="0" max="100">
+                          </div>
+                    </div>
+                    <button class="list-btn btn">
+                        <i class="far fa-list-alt"></i>
+                    </button>
+                </div>
+                <audio id="audio" src=""></audio>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="./songPlaylists.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
