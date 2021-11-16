@@ -7,6 +7,11 @@
     <title>Zing MP3 | Nghe tải nhạc chất lượng cao trên desktop, mobile và TV</title>
     <link rel="stylesheet" href="./assets/css/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -371,21 +376,149 @@
                                     </div>
                                 </div>
                                 
-                                <div class="user-content__section" style="height:800px;">
+                                <div class="user-content__section">
                                    <!-- header -->
                                     <div class="row user-content__header">
                                         <div class="user-content__header__title-wrap">
                                             <h3 class="user-content__header__title">Playlist</h3>
                                             <i class="ti-angle-right"></i>                                            
+                                        </div>                                        
+                                    </div>
+
+                                    <div class="user-content__playlists-wrap row">
+                                        <div class="col l-2-4 user-content__playlist__create-playlist"
+                                            style="background-image: linear-gradient(33deg,#5a1eae -7%,#ce267a 117%);"    
+                                        >
+                                            <i class="ti-plus"></i>
+                                            <span>Tạo playlist mới</span>
                                         </div>
-                                        <div class="user-content__header__btn-wrap">
-                                            <button class="btn btn--disable playlist--prevBtn user-content__header__btn">
-                                                <i class="ti-angle-left"></i>
-                                            </button>
-                                            <button class="btn playlist--nextBtn user-content__header__btn">
-                                                <i class="ti-angle-right"></i>
-                                            </button>
+                                        <div class="col l-2-4 user-content__playlist-item">
+                                            <div class="user-content__playlist-item-link">
+                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list1.webp) no-repeat center / cover;">
+                                                </div>
+                                                <div class="user-content__playlist-item-actions">
+                                                    <div class="user-content__playlist-item-actions--like">
+                                                        <i class="fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="user-content__playlist-item-actions--play">
+                                                        <i class="far fa-play-circle icon-play"></i>
+                                                    </div>
+                                                    <div class="user-content__playlist-item-actions--other">
+                                                        <i class="fas fa-ellipsis-h"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user-content__playlist-item__info">
+                                                <h3 class="user-content__playlist-item__title">Nhạc Hoa Bất Hủ</h3>
+                                                <h5 class="user-content__playlist-item__sub-title">Zing MP3</h5>
+                                            </div>
                                         </div>
+                                        <div class="col l-2-4 user-content__playlist-item">
+                                            <div class="user-content__playlist-item-link">
+                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list2.webp) no-repeat center / cover;">
+                                                </div>
+                                                <div class="user-content__playlist-item-actions">
+                                                    <div class="user-content__playlist-item-actions--like">
+                                                        <i class="fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="user-content__playlist-item-actions--play">
+                                                        <i class="far fa-play-circle icon-play"></i>
+                                                    </div>
+                                                    <div class="user-content__playlist-item-actions--other">
+                                                        <i class="fas fa-ellipsis-h"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user-content__playlist-item__info">
+                                                <h3 class="user-content__playlist-item__title">Top 100 Nhạc Electronic/Dance Âu Mỹ Hay Nhất</h3>
+                                                <h5 class="user-content__playlist-item__sub-title">Zing MP3</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col l-2-4 user-content__playlist-item">
+                                            <div class="user-content__playlist-item-link">
+                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list3.webp) no-repeat center / cover;">
+                                                </div>
+                                                <div class="user-content__playlist-item-actions">
+                                                    <div class="user-content__playlist-item-actions--like">
+                                                        <i class="fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="user-content__playlist-item-actions--play">
+                                                        <i class="far fa-play-circle icon-play"></i>
+                                                    </div>
+                                                    <div class="user-content__playlist-item-actions--other">
+                                                        <i class="fas fa-ellipsis-h"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user-content__playlist-item__info">
+                                                <h3 class="user-content__playlist-item__title">Top 100 Nhạc Hoa Hay Nhất</h3>
+                                                <h5 class="user-content__playlist-item__sub-title">Zing MP3</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col l-2-4 user-content__playlist-item">
+                                            <div class="user-content__playlist-item-link">
+                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list4.webp) no-repeat center / cover;">
+                                                </div>
+                                                <div class="user-content__playlist-item-actions">
+                                                    <div class="user-content__playlist-item-actions--like">
+                                                        <i class="fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="user-content__playlist-item-actions--play">
+                                                        <i class="far fa-play-circle icon-play"></i>
+                                                    </div>
+                                                    <div class="user-content__playlist-item-actions--other">
+                                                        <i class="fas fa-ellipsis-h"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user-content__playlist-item__info">
+                                                <h3 class="user-content__playlist-item__title">The Best of Bray</h3>
+                                                <h5 class="user-content__playlist-item__sub-title">Bray</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col l-2-4 user-content__playlist-item">
+                                            <div class="user-content__playlist-item-link">
+                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list1.webp) no-repeat center / cover;">
+                                                </div>
+                                                <div class="user-content__playlist-item-actions">
+                                                    <div class="user-content__playlist-item-actions--like">
+                                                        <i class="fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="user-content__playlist-item-actions--play">
+                                                        <i class="far fa-play-circle icon-play"></i>
+                                                    </div>
+                                                    <div class="user-content__playlist-item-actions--other">
+                                                        <i class="fas fa-ellipsis-h"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user-content__playlist-item__info">
+                                                <h3 class="user-content__playlist-item__title">Nhạc Hoa Bất Hủ</h3>
+                                                <h5 class="user-content__playlist-item__sub-title">Zing MP3</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col l-2-4 user-content__playlist-item">
+                                            <div class="user-content__playlist-item-link">
+                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list1.webp) no-repeat center / cover;">
+                                                </div>
+                                                <div class="user-content__playlist-item-actions">
+                                                    <div class="user-content__playlist-item-actions--like">
+                                                        <i class="fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="user-content__playlist-item-actions--play">
+                                                        <i class="far fa-play-circle icon-play"></i>
+                                                    </div>
+                                                    <div class="user-content__playlist-item-actions--other">
+                                                        <i class="fas fa-ellipsis-h"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user-content__playlist-item__info">
+                                                <h3 class="user-content__playlist-item__title">Nhạc Hoa Bất Hủ</h3>
+                                                <h5 class="user-content__playlist-item__sub-title">Zing MP3</h5>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                 </div>                                
                             </div>                        
@@ -557,5 +690,21 @@
     
     <script src="./songPlaylists.js"></script>
     <script src="./main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="./slickSlide.js"></script>
+
+
 </body>
 </html>

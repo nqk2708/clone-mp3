@@ -1,76 +1,76 @@
-const $ = document.querySelector.bind(document)
-const $$ = document.querySelectorAll.bind(document)
+const selector = document.querySelector.bind(document)
+const selectorAll = document.querySelectorAll.bind(document)
 
 const PLAYER_STORAGE_KEY = "PLAYER"
 
 // Sidebar Handle
-const navList = $$('.sidebar__nav-item')
-const contentContainers = $$('.content-container')
+const navList = selectorAll('.sidebar__nav-item')
+const contentContainers = selectorAll('.content-container')
 
 Array.from(navList).map((navItem, index) => navItem.onclick = (e) => {
     e.preventDefault()
     if(contentContainers[index]){
-        if($('.content-container.active')){
-            $('.content-container.active').classList.remove('active')
+        if(selector('.content-container.active')){
+            selector('.content-container.active').classList.remove('active')
         }
         contentContainers[index].classList.add('active')
     }
-    if($('.sidebar__nav-item.active')){
-        $('.sidebar__nav-item.active').classList.remove('active')
+    if(selector('.sidebar__nav-item.active')){
+        selector('.sidebar__nav-item.active').classList.remove('active')
     }
     navItem.classList.add('active')
 })
 
 // Header Handle
-const headerItems = $$('.header__item')
+const headerItems = selectorAll('.header__item')
 
 headerItems.forEach(item => item.onclick = (e) => {
     e.stopPropagation()
     item.classList.toggle('active')
 })
 document.onclick = () => {
-    if($('.header__item.active')) $('.header__item.active').classList.remove('active')
+    if(selector('.header__item.active')) selector('.header__item.active').classList.remove('active')
 }
 
 // Tab User Handle
-const userNavList = $$('.user-navbar__item')
-const userContentList = $$('.user-content')
+const userNavList = selectorAll('.user-navbar__item')
+const userContentList = selectorAll('.user-content')
 
 Array.from(userNavList).map((navItem, index) => navItem.onclick = (e) => {
     e.preventDefault()
     if(userContentList[index]){
-        if($('.user-content.active')){
-            $('.user-content.active').classList.remove('active')
+        if(selector('.user-content.active')){
+            selector('.user-content.active').classList.remove('active')
         }
         userContentList[index].classList.add('active')
     }
-    if($('.user-navbar__item.active')){
-        $('.user-navbar__item.active').classList.remove('active')
+    if(selector('.user-navbar__item.active')){
+        selector('.user-navbar__item.active').classList.remove('active')
     }
     navItem.classList.add('active')
 })
 
 // Player
-const slideImgs = $$('.container__slide-item');
-const togglePlay = $('.btn-toggle-play')
-const audio = $('#audio')
-const cd = $('.cd')
-const cdThumb = $('.cd-thumb')
-const player = $('#player')
-const progress = $('#progress')
-const nextBtn = $('.btn-next')
-const prevBtn = $('.btn-prev')
-const playlists = $$('.user__playlist')
-const volume = $('#volume')
-const volumeBtn = $('.vol-btn')
-const volControl = $('.vol-control')
-const gifPlaying = $$('.user__playlist-item__playing')
+const slideImgs = selectorAll('.container__slide-item');
+const togglePlay = selector('.btn-toggle-play')
+const audio = selector('#audio')
+const cd = selector('.cd')
+const cdThumb = selector('.cd-thumb')
+const player = selector('#player')
+const progress = selector('#progress')
+const nextBtn = selector('.btn-next')
+const prevBtn = selector('.btn-prev')
+const playlists = selectorAll('.user__playlist')
+const volume = selector('#volume')
+const volumeBtn = selector('.vol-btn')
+const volControl = selector('.vol-control')
+const gifPlaying = selectorAll('.user__playlist-item__playing')
 
 //Handle slide show
 let imgIndex = 2;
 (function slideShow() {
-    const slideImgFirst = $('.container__slide-item.first')
-    const slideImgSecond = $('.container__slide-item.second')
+    const slideImgFirst = selector('.container__slide-item.first')
+    const slideImgSecond = selector('.container__slide-item.second')
     const slideImgThird = slideImgs[imgIndex]
     const slideImgFourth = slideImgs[imgIndex === slideImgs.length -1 ?  0 : imgIndex + 1]
     slideImgFourth.classList.replace('fourth', 'third')
@@ -189,15 +189,15 @@ const app = {
         audio.onplay = function() {
             _this.isPlaying = true
             player.classList.add('playing')
-            $$('.user__playlist-item__playing')[_this.currentIndex].classList.add('active')
-            $$('.user__playlist-item__playing')[_this.currentIndex + _this.songs[_this.currentPlaylist].length].classList.add('active')
+            selectorAll('.user__playlist-item__playing')[_this.currentIndex].classList.add('active')
+            selectorAll('.user__playlist-item__playing')[_this.currentIndex + _this.songs[_this.currentPlaylist].length].classList.add('active')
             cdThumbAnimate.play()            
         }
         audio.onpause = function() {
             _this.isPlaying = false
             player.classList.remove('playing')
-            $$('.user__playlist-item__playing')[_this.currentIndex].classList.remove('active')
-            $$('.user__playlist-item__playing')[_this.currentIndex + _this.songs[_this.currentPlaylist].length].classList.remove('active')
+            selectorAll('.user__playlist-item__playing')[_this.currentIndex].classList.remove('active')
+            selectorAll('.user__playlist-item__playing')[_this.currentIndex + _this.songs[_this.currentPlaylist].length].classList.remove('active')
             cdThumbAnimate.pause()
         }
         
@@ -227,8 +227,8 @@ const app = {
 
         //Khi tiến độ bài hát thay đổi
         audio.ontimeupdate = function() {            
-            const curTime = $('.curTime')
-            const durTime = $('.durationTime')
+            const curTime = selector('.curTime')
+            const durTime = selector('.durationTime')
 
             let newIndex = _this.currentIndex
 
@@ -284,14 +284,14 @@ const app = {
         }
 
         //Xử lý khi nhấn Random
-        const randomBtn = $('.btn-random')
+        const randomBtn = selector('.btn-random')
         randomBtn.onclick = function() {
             _this.isRandom = !_this.isRandom            
             randomBtn.classList.toggle('active')
         }
 
         //Xử lý khi nhấn Repeat
-        const repeatBtn = $('.btn-repeat')
+        const repeatBtn = selector('.btn-repeat')
         repeatBtn.onclick = function() {
             _this.isRepeat = !_this.isRepeat
             repeatBtn.classList.toggle('active')
@@ -328,8 +328,8 @@ const app = {
     },
 
     loadCurrentSong: function() {    
-        const singer = $('.songs-info h5')
-        const songName = $('.songs-info h2')
+        const singer = selector('.songs-info h5')
+        const songName = selector('.songs-info h2')
         songName.textContent = this.currentSong.name
         singer.textContent = this.currentSong.singer
         cdThumb.style.backgroundImage = `url('${this.currentSong.image}')`
