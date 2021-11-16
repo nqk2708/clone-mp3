@@ -5,91 +5,91 @@ const songs = [
             singer: 'Hoài Lâm',
             path: './assets/songs/List 1/HoaNoKhongMau1-HoaiLam-6281704.mp3',
             duration: '05:28',
-            image:"./assets/img/HoaNoKhongMau.jpg"
+            image:"./assets/img/songList1/HoaNoKhongMau.jpg"
         },
         {
             name: 'Buồn Làm Chi Em Ơi',
             singer: 'Hoài Lâm',
             path: './assets/songs/List 1/BuonLamChiEmOi1-HoaiLam-6297318.mp3',
             duration: '04:32',
-            image:"./assets/img/BuonLamChiEmOi.jpg"
+            image:"./assets/img/songList1/BuonLamChiEmOi.jpg"
         },
         {
             name: 'Như Những Phút Ban Đầu',
             singer: 'Hoài Lâm',
             path: './assets/songs/List 1/Nhu Nhung Phut Ban Dau - Hoai Lam (NhacPro.net).mp3',
             duration: '05:34',
-            image:"./assets/img/NhuNhungPhutBanDau.jpg"
+            image:"./assets/img/songList1/NhuNhungPhutBanDau.jpg"
         },
         {
             name: 'Có Khi',
             singer: 'Hoài Lâm',
             path: './assets/songs/List 1/Co-Khi-Hoai-Lam.mp3',
             duration: '04:15',
-            image:"./assets/img/BuonLamChiEmOi.jpg"
+            image:"./assets/img/songList1/CoKhi.jpg"
         },
         {
             name: 'Một Thời Đã Xa',
             singer: 'Hoài Lâm',
             path: './assets/songs/List 1/Mot-thoi-da-xa-Hoai-Lam.mp3',
             duration: '05:23',
-            image:"./assets/img/MotThoiDaXa.jpg"
+            image:"./assets/img/songList1/MotThoiDaXa.jpg"
         },
         {
             name: 'Thương Nhớ Người Dưng',
             singer: 'Hoài Lâm',
             path: './assets/songs/List 1/Thuong-nho-nguoi-dung-Hoai-Lam.mp3',
-            duration: '05:42',
-            image:"./assets/img/MotThoiDaXa.jpg"
+            duration: '05:03',
+            image:"./assets/img/songList1/ThuongNhoNguoiDung.jpg"
         },
         {
             name: 'Nỗi Nhớ Mang Tên Mình',
             singer: 'Hoài Lâm',
             path: './assets/songs/List 1/Noi-Nho-Mang-Ten-Minh.mp3',
-            duration: '05:42',
-            image:"./assets/img/NhuNhungPhutBanDau.jpg"
+            duration: '05:10',
+            image:"./assets/img/songList1/NoiNhoMangTenMinh.jpg"
         },
         {
             name: 'Mẹ',
             singer: 'Hoài Lâm',
             path: './assets/songs/List 1/Me-Hoai-Lam.mp3',
-            duration: '05:42',
-            image:"./assets/img/NhuNhungPhutBanDau.jpg"
+            duration: '04:55',
+            image:"./assets/img/songList1/Me.jpg"
         },
         {
             name: 'Trộm Nhìn Nhau',
             singer: 'Hoài Lâm',
             path: './assets/songs/List 1/Trom-Nhin-Nhau-Hoai-Lam.mp3',
-            duration: '05:42',
-            image:"./assets/img/TromNhinNhau.jpg"
+            duration: '05:13',
+            image:"./assets/img/songList1/TromNhinNhau.jpg"
         },
         {
             name: 'Xin Lỗi Vì Đã Yêu Nhau',
             singer: 'Hoài Lâm',
             path: './assets/songs/List 1/Xin-Loi-Vi-Da-Yeu-Nhau-Hoai-Lam.mp3',
-            duration: '05:42',
-            image:"./assets/img/MotThoiDaXa.jpg"
+            duration: '04:48',
+            image:"./assets/img/songList1/XinLoiViDaYeuNhau.jpg"
         },
         {
             name: 'Có Khi Nào Rời Xa',
             singer: 'Hoài Lâm',
             path: './assets/songs/List 1/Co-Khi-Nao-Roi-Xa-Hoai-Lam.mp3',
-            duration: '05:42',
-            image:"./assets/img/BuonLamChiEmOi.jpg"
+            duration: '03:41',
+            image:"./assets/img/songList1/CoKhiNaoRoiXa.jpg"
         },
         {
             name: 'Về Đâu Mái Tóc Người Thương',
             singer: 'Hoài Lâm',
             path: './assets/songs/List 1/Ve-Dau-Mai-Toc-Nguoi-Thuong-Hoai-Lam.mp3',
-            duration: '05:42',
-            image:"./assets/img/NhuNhungPhutBanDau.jpg"
+            duration: '04:23',
+            image:"./assets/img/songList1/VeDauMaiTocNguoiThuong.jpg"
         },
         {
             name: 'Nếu Như Là Định Mệnh',
             singer: 'Hoài Lâm, Binz',
             path: './assets/songs/List 1/Neu-Nhu-La-Dinh-Menh-Hoai-Lam-Binz.mp3',
-            duration: '05:42',
-            image:"./assets/img/MotThoiDaXa.jpg"
+            duration: '04:38',
+            image:"./assets/img/songList1/NeuNhuLaDinhMenh.jpg"
         },
     ],
     [ //2
@@ -148,6 +148,55 @@ const songs = [
             path: './assets/songs/List 2/LuyenNhanTam-NguyTanVu-4583893.mp3',
             duration: '03:26',
             image:"./assets/img/songList2/LuyenNhanTam.jpg"
+        },
+        {
+            name: 'Ly Nhân Sầu / 离人愁',
+            singer: 'Lý Viên Kiệt',
+            path: './assets/songs/List 2/LyNhanSau-LyVienKiet-5411802.mp3',
+            duration: '04:09',
+            image:"./assets/img/songList2/LyNhanSau.jpg"
+        },
+        {
+            name: 'Mang Chủng / 芒种',
+            singer: 'Âm Khuyết Thi Thính, Triệu Phương Tịnh',
+            path: './assets/songs/List 2/MangChung-TrieuPhuongTinhAmKhuyetThiThinh-5989054.mp3',
+            duration: '03:36',
+            image:"./assets/img/songList2/MangChung.jpg"
+        },
+        {
+            name: 'Niên Luân / 年輪',
+            singer: 'Trương Bích Thần',
+            path: './assets/songs/List 2/NienLuanHoaThienCotOst-TruongBichThan-4024398.mp3',
+            duration: '04:35',
+            image:"./assets/img/songList2/NienLuan.jpg"
+        },
+        {
+            name: 'Tam Sinh Tam Thế / 三生三世',
+            singer: 'Trương Kiệt',
+            path: './assets/songs/List 2/TamSinhTamTheTamSinhTamTheThapLyDaoHoaOst-JasonZhangTruongKiet-4748050.mp3',
+            duration: '04:18',
+            image:"./assets/img/songList2/TamSinhTamThe.jpg"
+        },
+        {
+            name: 'Thiên Cổ / 千古',
+            singer: 'Alan',
+            path: './assets/songs/List 2/ThienCoHoaThienCotOst-ALan-4053302.mp3',
+            duration: '04:16',
+            image:"./assets/img/songList2/ThienCo.jpg"
+        },
+        {
+            name: 'Xuất Sơn / 出山',
+            singer: 'Hoa Chúc, Vương Thắng Nam',
+            path: './assets/songs/List 2/XuatSon-HoaChucVuongThangNam-5883657.mp3',
+            duration: '03:20',
+            image:"./assets/img/songList2/XuatSon.jpg"
+        },
+        {
+            name: 'Yến Vô Hiết / 燕无歇',
+            singer: 'Tưởng Tuyết Nhi (Cher Chiang)',
+            path: './assets/songs/List 2/YenVoHiet-TuongTuyetNhiCherChiang-6520166.mp3',
+            duration: '03:21',
+            image:"./assets/img/songList2/YenVoHiet.jpg"
         },
     ],
     [ // 3

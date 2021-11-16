@@ -104,7 +104,10 @@ const app = {
             return`
                 <li class="user__playlist-item ${index === app.currentIndex ? 'active' : ''}" data-index="${index}"}
                 >
-                    <div class="user__playlist-item-left">                        
+                    <div class="user__playlist-item-left">
+                        <div class="user__playlist-item-left-icon">
+                            <i class="ti-music-alt"></i>
+                        </div>           
                         <div class="user__playlist-item__img-wrap">
                             <div class="user__playlist-item__img" style="background-image: url(${song.image});">
                             </div>
@@ -387,6 +390,10 @@ const app = {
         this.loadCurrentSong()
     },
 
+    render: function() {
+        this.renderSongs()
+    },
+
     start: function() {
         //định nghĩa thuộc tính cho obj
         this.defineProperties()        
@@ -395,7 +402,7 @@ const app = {
         this.loadCurrentSong()
 
         //render playlist
-        this.renderSongs()
+        this.render()
 
         //lắng nghe sự kiện
         this.handleEvents()
