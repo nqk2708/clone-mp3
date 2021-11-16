@@ -316,6 +316,32 @@ const app = {
                 }
             }    
         })
+
+        //lay element cha
+        function getParent (element, selector) {
+            while (element.parentElement) {
+                if (element.parentElement.matches(selector)) {
+                    return element.parentElement
+                }
+                element = element.parentElement
+            }
+        }
+
+        // Khi ấn Play 1 playlist bất kỳ
+        const listPlayBtns = selectorAll('.user-content__playlist-item-actions--play')
+        listPlayBtns.forEach((listPlayBtn, index) => {
+            listPlayBtn.onclick = () => {
+                const listOverview = getParent(listPlayBtn, '.user-content__playlist-item-link')
+                if(selector('.user-content__playlist-item-link.active')) {
+                    selector('.user-content__playlist-item-link.active').classList.remove('active')
+                } 
+                listOverview.classList.add('active')
+                app.currentPlaylist = index
+                app.renderSongs()
+                app.loadCurrentSong()
+                audio.play()
+            }
+        })
     },
 
     secondsToMs: function(d){
@@ -355,7 +381,7 @@ const app = {
     randomSong: function() {
         let newIndex
         do {
-            newIndex = Math.floor(Math.random() * this.songs.length)
+            newIndex = Math.floor(Math.random() * this.songs[this.currentPlaylist].length)
         } while (newIndex === this.currentIndex)
         this.currentIndex = newIndex
         this.loadCurrentSong()
