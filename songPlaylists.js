@@ -201,25 +201,193 @@ const songs = [
     ],
     [ // 3
         {
-            name: 'Có Khi Nào Rời Xa',
-            singer: 'Hoài Lâm',
-            path: './assets/songs/Co-Khi-Nao-Roi-Xa-Hoai-Lam.mp3',
-            duration: '05:42',
-            image:"./assets/img/BuonLamChiEmOi.jpg"
+            name: 'Welcome To The Show',
+            singer: 'Bray',
+            path: './assets/songs/List 3/y2mate.com - FYILY 3 Welcome to the Show Prod eeryskies  B Ray.mp3',
+            duration: '03:50',
+            image:"./assets/img/songList3/WelcomeToTheShow.webp"
         },
         {
-            name: 'Về Đâu Mái Tóc Người Thương',
-            singer: 'Hoài Lâm',
-            path: './assets/songs/Ve-Dau-Mai-Toc-Nguoi-Thuong-Hoai-Lam.mp3',
-            duration: '05:42',
-            image:"./assets/img/NhuNhungPhutBanDau.jpg"
+            name: 'Bản Nhạc Buồn',
+            singer: 'Bray',
+            path: './assets/songs/List 3/1BanNhacBuon-BRay-7090779.mp3',
+            duration: '03:42',
+            image:"./assets/img/songList3/BanNhacBuon.jpg"
         },
         {
-            name: 'Nếu Như Là Định Mệnh',
-            singer: 'Hoài Lâm, Binz',
-            path: './assets/songs/Neu-Nhu-La-Dinh-Menh-Hoai-Lam-Binz.mp3',
-            duration: '05:42',
-            image:"./assets/img/MotThoiDaXa.jpg"
+            name: '3 Lần Phải Khóc',
+            singer: 'Bray',
+            path: './assets/songs/List 3/3LanPhaiKhoc-BRay-4720100.mp3',
+            duration: '04:14',
+            image:"./assets/img/songList3/3LanPhaiKhoc.jpg"
+        },
+        {
+            name: '100 Questions',
+            singer: 'Bray, V#',
+            path: './assets/songs/List 3/3LanPhaiKhoc-BRay-4720100.mp3',
+            duration: '03:51',
+            image:"./assets/img/songList3/100Questions.jpg"
+        },
+        {
+            name: 'Badabum',
+            singer: 'Bray',
+            path: './assets/songs/List 3/Badabum-Bray-5385909.mp3',
+            duration: '02:51',
+            image:"./assets/img/songList3/Badabum.jpg"
+        },
+        {
+            name: 'Cao Ốc 20',
+            singer: 'Bray, Đạt G, Masew',
+            path: './assets/songs/List 3/CaoOc20-BRayDatGMasewKICM-6008352.mp3',
+            duration: '03:27',
+            image:"./assets/img/songList3/CaoOc20.jpg"
+        },
+        {
+            name: 'Chân Mệnh',
+            singer: 'Bray',
+            path: './assets/songs/List 3/ChanMenh-BRay-6557440.mp3',
+            duration: '03:17',
+            image:"./assets/img/songList3/ChanMenh.jpg"
+        },
+        {
+            name: 'Cho Ba',
+            singer: 'Bray',
+            path: './assets/songs/List 3/ChoBa-BRay-6557402.mp3',
+            duration: '02:39',
+            image:"./assets/img/songList3/ChoBa.jpg"
+        },
+        {
+            name: 'Con Gái Rượu',
+            singer: 'Bray',
+            path: './assets/songs/List 3/ConGaiRuou-BRay-6223884.mp3',
+            duration: '04:06',
+            image:"./assets/img/songList3/ConGaiRuou.jpg"
+        },
+        {
+            name: 'Do For Love',
+            singer: 'Bray, Amee',
+            path: './assets/songs/List 3/DoForLove-AMeeBRay-6221980.mp3',
+            duration: '03:09',
+            image:"./assets/img/songList3/DoForLove.jpg"
+        },
+        {
+            name: 'Đừng Tin Her',
+            singer: 'Bray, Young H, Masew',
+            path: './assets/songs/List 3/DungTinHer-BRayYoungHMasew-6861123.mp3',
+            duration: '03:33',
+            image:"./assets/img/songList3/DungTinHer.jpg"
+        },
+        {
+            name: 'Dư Tiền',
+            singer: 'Bray',
+            path: './assets/songs/List 3/DuTien-BRay-6223886.mp3',
+            duration: '02:41',
+            image:"./assets/img/songList3/DuTien.jpg"
+        },
+        {
+            name: "Ex's Hate Me",
+            singer: 'Bray, Amee, Masew',
+            path: './assets/songs/List 3/ExsHateMe-BRayMasewAMee-5878683.mp3',
+            duration: '03:51',
+            image:"./assets/img/songList3/ExHateMe.jpg"
+        },
+        {
+            name: "Ex's Hate Me 2",
+            singer: 'Bray, Amee, Masew',
+            path: './assets/songs/List 3/ExsHateMePart2MasewRemix-BRayMasewAMee-6952158.mp3',
+            duration: '04:06',
+            image:"./assets/img/songList3/ExHateMe2.jpg"
+        },
+        {
+            name: "Hoàn Hảo",
+            singer: 'Bray',
+            path: './assets/songs/List 3/HoanHao-BRay-6914630.mp3',
+            duration: '03:39',
+            image:"./assets/img/songList3/HoanHao.jpg"
+        },
+        {
+            name: "Mách Bảo",
+            singer: 'Bray',
+            path: './assets/songs/List 3/MachBao-BRay-7101219.mp3',
+            duration: '03:49',
+            image:"./assets/img/songList3/MachBao.jpg"
+        },
+        {
+            name: "Ở Trong Thành Phố",
+            singer: 'Bray, Masew, Hannah',
+            path: './assets/songs/List 3/OTrongThanhPho-MasewHannahBRay-5323877.mp3',
+            duration: '03:05',
+            image:"./assets/img/songList3/OTrongThanhPho.jpg"
+        },
+        {
+            name: "Phép Màu",
+            singer: 'Bray',
+            path: './assets/songs/List 3/PhepMau-BRay-5289793.mp3',
+            duration: '03:26',
+            image:"./assets/img/songList3/PhepMau.jpg"
+        },
+        {
+            name: "Ta Có Nên",
+            singer: 'Bray',
+            path: './assets/songs/List 3/TaCoNen-BRay-6557384.mp3',
+            duration: '03:16',
+            image:"./assets/img/songList3/TaCoNen.jpg"
+        },
+        {
+            name: "Thương Nhiều Hơn Nói",
+            singer: 'Bray, Đạt G, Masew',
+            path: './assets/songs/List 3/ThuongNhieuHonNoi-DatGBrayMasew-5510862.mp3',
+            duration: '02:58',
+            image:"./assets/img/songList3/ThuongNhieuHonNoi.jpg"
+        },
+        {
+            name: "Tíc Tắc",
+            singer: 'Bray',
+            path: './assets/songs/List 3/TicTac-BRay-4680459.mp3',
+            duration: '03:06',
+            image:"./assets/img/songList3/TicTac.jpg"
+        },
+        {
+            name: "Way Back Home",
+            singer: 'Bray, Phạm Vi',
+            path: './assets/songs/List 3/WayBackHome-BRayPhamVi-4816173.mp3',
+            duration: '03:03',
+            image:"./assets/img/songList3/WayBackHome.jpg"
+        },
+        {
+            name: "Xin",
+            singer: 'Bray, Đạt G, Masew',
+            path: './assets/songs/List 3/Xin-DatGMasewBRay-5325955.mp3',
+            duration: '04:31',
+            image:"./assets/img/songList3/Xin.jpg"
+        },
+        {
+            name: "Xin Lỗi",
+            singer: 'Bray',
+            path: './assets/songs/List 3/XinLoi-BRay-5287279.mp3',
+            duration: '04:30',
+            image:"./assets/img/songList3/XinLoi.jpg"
+        },
+        {
+            name: "Finale 2",
+            singer: 'Bray',
+            path: './assets/songs/List 3/Finale2-Bray-5287014.mp3',
+            duration: '03:19',
+            image:"./assets/img/songList3/Finale2.jpg"
+        },
+        {
+            name: "Finale 3",
+            singer: 'Bray',
+            path: './assets/songs/List 3/Finale3Outro-BRay-6223887.mp3',
+            duration: '03:04',
+            image:"./assets/img/songList3/Finale3.jpg"
+        },
+        {
+            name: "The Last Finale",
+            singer: 'Bray',
+            path: './assets/songs/List 3/TheLastFinale-BRay-7044287.mp3',
+            duration: '02:23',
+            image:"./assets/img/songList3/TheLastFinale.jpg"
         },
     ]
 ]
