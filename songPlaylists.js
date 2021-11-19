@@ -224,7 +224,7 @@ const songs = [
         {
             name: '100 Questions',
             singer: 'Bray, V#',
-            path: './assets/songs/List 3/3LanPhaiKhoc-BRay-4720100.mp3',
+            path: './assets/songs/List 3/100Questions-VBRay-5161736.mp3',
             duration: '03:51',
             image:"./assets/img/songList3/100Questions.jpg"
         },

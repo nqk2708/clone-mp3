@@ -95,6 +95,7 @@ const app = {
     currentIndex : 0,
     currentPlaylist: 0,
     imgIndex: 2,
+    indexArr: [],
 
     config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY) || '{}'),
 
@@ -419,9 +420,13 @@ const app = {
         let newIndex
         do {
             newIndex = Math.floor(Math.random() * this.songs[this.currentPlaylist].length)
-        } while (newIndex === this.currentIndex)
+        } while (newIndex === this.currentIndex || this.indexArr.includes(newIndex))
+        this.indexArr.push(newIndex)
         this.currentIndex = newIndex
         this.loadCurrentSong()
+        if(this.indexArr.length === this.songs[this.currentPlaylist].length) {
+            this.indexArr = [];
+        }
     },
 
     render: function() {
