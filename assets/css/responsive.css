@@ -2,10 +2,16 @@
 @media (max-width: 1023px) {
     :root {
         --sidebar-width: calc(100% - 70px);  
+        --img-logo-mp3: url(https://zjs.zadn.vn/zmp3-desktop/releases/v1.4.11/static/media/icon_zing_mp3_60.f6b51045.svg);
     }
 
     .hide-on-mobile-tablet {
         display: none;
+    }
+
+    .sidebar__brand-logo {
+        background-size: 80%;
+        margin-left: 10px;
     }
     
     .header-wrap {
