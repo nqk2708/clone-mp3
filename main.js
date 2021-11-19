@@ -50,8 +50,10 @@ Array.from(userNavList).map((navItem, index) => navItem.onclick = (e) => {
     navItem.classList.add('active')
 })
 
+// Tab User
+const slideOverview = selector('.container__slide-show')
+
 // Player
-const slideImgs = selectorAll('.container__slide-item');
 const togglePlay = selector('.btn-toggle-play')
 const audio = selector('#audio')
 const cd = selector('.cd')
@@ -66,23 +68,23 @@ const volumeBtn = selector('.vol-btn')
 const volControl = selector('.vol-control')
 const gifPlaying = selectorAll('.user__playlist-item__playing')
 
-//Handle slide show
-let imgIndex = 2;
-(function slideShow() {
-    const slideImgFirst = selector('.container__slide-item.first')
-    const slideImgSecond = selector('.container__slide-item.second')
-    const slideImgThird = slideImgs[imgIndex]
-    const slideImgFourth = slideImgs[imgIndex === slideImgs.length -1 ?  0 : imgIndex + 1]
-    slideImgFourth.classList.replace('fourth', 'third')
-    slideImgThird.classList.replace('third', 'second')
-    slideImgSecond.classList.replace('second', 'first')
-    slideImgFirst.classList.replace('first', 'fourth')
-    imgIndex++;
-    if(imgIndex >= slideImgs.length) {
-        imgIndex = 0;
-    }
-    setTimeout(slideShow, 2000)
-})()
+// Handle slide show
+// let imgIndex = 2;
+// (function slideShow() {
+//     const slideImgFirst = selector('.container__slide-item.first')
+//     const slideImgSecond = selector('.container__slide-item.second')
+//     const slideImgThird = slideImgs[imgIndex]
+//     const slideImgFourth = slideImgs[imgIndex === slideImgs.length -1 ?  0 : imgIndex + 1]
+//     slideImgFourth.classList.replace('fourth', 'third')
+//     slideImgThird.classList.replace('third', 'second')
+//     slideImgSecond.classList.replace('second', 'first')
+//     slideImgFirst.classList.replace('first', 'fourth')
+//     imgIndex++;
+//     if(imgIndex >= slideImgs.length) {
+//         imgIndex = 0;
+//     }
+//     setTimeout(slideShow, 2000)
+// })()
 
 const app = {
     songs: JSON.parse(localStorage.getItem(SONG_PLAYLISTS_KEY) || '[]'),
@@ -92,6 +94,8 @@ const app = {
     isMuted: false,
     currentIndex : 0,
     currentPlaylist: 0,
+    imgIndex: 2,
+
     config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY) || '{}'),
 
     setConfig: function(key, value) {
@@ -143,6 +147,35 @@ const app = {
         playlists.forEach((playlist, index) => {
             playlist.innerHTML = htmls.join('')
         })
+    },
+
+    renderSlideOverview: function() {
+        const htmls = this.songs[this.currentPlaylist].map(function(song, index) {
+            return`
+                <div class="container__slide-item 
+                            ${index === 0 && 'first' || index === 1 && 'second' || index === 2 && 'third' || index > 2 && 'fourth'}">
+                    <div style="background: url(${song.image}) no-repeat center center / cover" class="container__slide-img"></div>
+                </div>
+            `                    
+        })
+        slideOverview.innerHTML = htmls.join('')
+    },
+
+    slideShow() {        
+        const slideImgs = selectorAll('.container__slide-item')
+        const slideImgFirst = selector('.container__slide-item.first')
+        const slideImgSecond = selector('.container__slide-item.second')
+        const slideImgThird = slideImgs[app.imgIndex]
+        const slideImgFourth = slideImgs[app.imgIndex === slideImgs.length -1 ?  0 : app.imgIndex + 1]
+        slideImgFourth.classList.replace('fourth', 'third')
+        slideImgThird.classList.replace('third', 'second')
+        slideImgSecond.classList.replace('second', 'first')
+        slideImgFirst.classList.replace('first', 'fourth')
+        app.imgIndex++;
+        if(app.imgIndex >= slideImgs.length) {
+            app.imgIndex = 0;
+        }
+        setTimeout(app.slideShow, 2000)
     },
 
     defineProperties: function() {
@@ -340,7 +373,9 @@ const app = {
                 } 
                 listOverview.classList.add('active')
                 app.currentPlaylist = index
+                app.imgIndex = 2
                 app.renderSongs()
+                app.renderSlideOverview()                
                 app.loadCurrentSong()
                 audio.play()
             }
@@ -392,6 +427,7 @@ const app = {
 
     render: function() {
         this.renderSongs()
+        this.renderSlideOverview()
     },
 
     start: function() {
@@ -403,6 +439,9 @@ const app = {
 
         //render playlist
         this.render()
+
+        // slide overview animate
+        this.slideShow()
 
         //lắng nghe sự kiện
         this.handleEvents()
