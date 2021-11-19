@@ -4,6 +4,15 @@ $(document).ready(function(){
     slidesToShow: 5,
     slidesToScroll: 5,
     prevArrow:"<button type='button' class='slick-prev slick-arrow'><i class='ti-angle-left' aria-hidden='true'></i></button>",
-    nextArrow:"<button type='button' class='slick-next slick-arrow'><i class='ti-angle-right' aria-hidden='true'></i></button>"
+    nextArrow:"<button type='button' class='slick-next slick-arrow'><i class='ti-angle-right' aria-hidden='true'></i></button>",
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        }
+      }
+    ]
   });
 });

@@ -1,0 +1,57 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    :root {
+        --sidebar-width: calc(100% - 70px);  
+    }
+
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    
+    .header-wrap {
+        flex-wrap: unset;
+    }
+
+    .sidebar__nav-item-link {
+        height: 36px;
+    }
+    .sidebar__nav-item-link span,
+    .sidebar__add-playlist span {
+        display: none;
+    }
+
+    .container__slide-show {
+        transform: scale(0.8);
+        transition: all .1s linear;
+    }
+    .container__slide-item {
+        width: 265px;
+        height: 265px;
+    }
+    
+
+    .user-content__playlist__create-playlist,
+    .user-content__playlist-item {
+        height: 200px;
+    }
+    .user-content__playlist-item-link {
+        height: 150px;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    
+}

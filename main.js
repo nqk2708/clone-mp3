@@ -125,7 +125,7 @@ const app = {
                         </div>
                     </div>
 
-                    <div class="user__playlist-item-center">
+                    <div class="user__playlist-item-center hide-on-mobile-tablet">
                         <span>${song.duration}</span>
                     </div>
 
@@ -288,7 +288,6 @@ const app = {
                     _this.loadCurrentSong()
                 }
                 _this.renderSongs()
-                _this.handleEvents()
                 audio.play()
             }
         }

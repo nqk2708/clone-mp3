@@ -13,8 +13,8 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
       />
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
@@ -48,7 +48,7 @@
                     <a href="" class="sidebar__nav-item-link">
                         <i class="sidebar__nav-item-icon fas fa-podcast"></i>
                        <span>Radio</span>
-                       <img src="https://zjs.zadn.vn/zmp3-desktop/dev/147506/static/media/live-tag.e25dd240.svg" alt="">
+                       <img class="hide-on-mobile-tablet" src="https://zjs.zadn.vn/zmp3-desktop/dev/147506/static/media/live-tag.e25dd240.svg" alt="">
                     </a>
                 </li>
                 <li class="sidebar__nav-item">
@@ -87,14 +87,14 @@
                 </ul>
 
                 <!-- Vip banner -->
-                <div class="sidebar__nav-wrap__vip-banner">
+                <div class="sidebar__nav-wrap__vip-banner hide-on-mobile-tablet">
                     <span>Nghe nhạc không quảng cáo cùng kho nhạc VIP</span>
                     <a href="" class="sidebar__nav-wrap__vip-banner-btn btn">NÂNG CẤP VIP</a>
                 </div>
 
                 <!-- Library -->
                 <div class="sidebar__nav-wrap__lib">
-                    <div class="sidebar__nav-wrap__lib-header">
+                    <div class="sidebar__nav-wrap__lib-header hide-on-mobile-tablet">
                         <span class="sidebar__nav-wrap__lib-header-label">THƯ VIỆN</span>
                         <div class="sidebar__nav-wrap__lib-header-icon">
                             <i class="ti-pencil"></i>
@@ -106,7 +106,7 @@
                                 <i class="sidebar__nav-wrap__lib-icon">
                                     <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.0.13/static/media/my-song.cf0cb0b4.svg">
                                 </i>
-                                <span class="sidebar__nav-wrap__lib-title">Bài hát</span>
+                                <span class="sidebar__nav-wrap__lib-title hide-on-mobile-tablet">Bài hát</span>
                             </a>
                         </li>
                         <li class="sidebar__nav-wrap__lib-item">
@@ -114,7 +114,7 @@
                                 <i class="sidebar__nav-wrap__lib-icon">
                                     <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.0.13/static/media/my-playlist.7e92a5f0.svg">
                                 </i>
-                                <span class="sidebar__nav-wrap__lib-title">Playlist</span>
+                                <span class="sidebar__nav-wrap__lib-title hide-on-mobile-tablet">Playlist</span>
                             </a>
                         </li>
                         <li class="sidebar__nav-wrap__lib-item">
@@ -122,7 +122,7 @@
                                 <i class="sidebar__nav-wrap__lib-icon">
                                     <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.0.13/static/media/my-history.374cb625.svg">
                                 </i>
-                                <span class="sidebar__nav-wrap__lib-title">Gần đây</span>
+                                <span class="sidebar__nav-wrap__lib-title hide-on-mobile-tablet">Gần đây</span>
                             </a>
                         </li>
                     </ul>
@@ -348,12 +348,12 @@
     
                                     <!-- Main -->
                                     <div class="user-content__main row">
-                                        <div class="col l-4 user-content__main__slider">
+                                        <div class="col l-4 m-4 c-0 user-content__main__slider">
                                                 <div class="container__slide-show">
                                                     
                                                 </div>  
                                         </div>
-                                        <div class="col l-8 user-content__main__playlist">
+                                        <div class="col l-8 m-8 c-12 user-content__main__playlist">
                                             <ul class="user__playlist">
                                                 
                                             </ul>
@@ -372,7 +372,7 @@
                                     </div>
 
                                     <div class="user-content__playlists-wrap row">
-                                        <div class="col l-2-4 user-content__playlist__create-playlist"
+                                        <div class="col l-2-4 m-8 c-3 user-content__playlist__create-playlist"
                                             style="background-image: linear-gradient(33deg,#5a1eae -7%,#ce267a 117%);"    
                                         >
                                             <i class="ti-plus"></i>
@@ -380,7 +380,7 @@
                                         </div>
                                         <div class="col l-2-4 user-content__playlist-item">
                                             <div class="user-content__playlist-item-link">
-                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list1.jpg) no-repeat center / cover;">
+                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list1.jpg) no-repeat center / contain;">
                                                 </div>
                                                 <div class="user-content__playlist-item-actions">
                                                     <div class="user-content__playlist-item-actions--like">
@@ -389,7 +389,7 @@
                                                     <div class="user-content__playlist-item-actions--play">
                                                         <i class="far fa-play-circle icon-play"></i>
                                                         <div class="wave-playing">
-                                                            <div style="background: url(./assets/img/icon-playing.gif) no-repeat 50% / contain;
+                                                            <div style="background: url(./assets/img/icon-playing.gif) no-repeat 50% / cover;
                                                                     width: 50%; height: 50%;    
                                                                 ">
                                                             </div>
@@ -407,7 +407,7 @@
                                         </div>
                                         <div class="col l-2-4 user-content__playlist-item">
                                             <div class="user-content__playlist-item-link">
-                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list2.webp) no-repeat center / cover;">
+                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list2.webp) no-repeat center / contain;">
                                                 </div>
                                                 <div class="user-content__playlist-item-actions">
                                                     <div class="user-content__playlist-item-actions--like">
@@ -416,7 +416,7 @@
                                                     <div class="user-content__playlist-item-actions--play">
                                                         <i class="far fa-play-circle icon-play"></i>
                                                         <div class="wave-playing">
-                                                            <div style="background: url(./assets/img/icon-playing.gif) no-repeat 50% / contain;
+                                                            <div style="background: url(./assets/img/icon-playing.gif) no-repeat 50% / cover;
                                                                     width: 50%; height: 50%;    
                                                                 ">
                                                             </div>
@@ -434,7 +434,7 @@
                                         </div>
                                         <div class="col l-2-4 user-content__playlist-item">
                                             <div class="user-content__playlist-item-link">
-                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list3.webp) no-repeat center / cover;">
+                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list3.webp) no-repeat center / contain;">
                                                 </div>
                                                 <div class="user-content__playlist-item-actions">
                                                     <div class="user-content__playlist-item-actions--like">
@@ -443,7 +443,7 @@
                                                     <div class="user-content__playlist-item-actions--play">
                                                         <i class="far fa-play-circle icon-play"></i>
                                                         <div class="wave-playing">
-                                                            <div style="background: url(./assets/img/icon-playing.gif) no-repeat 50% / contain;
+                                                            <div style="background: url(./assets/img/icon-playing.gif) no-repeat 50% / cover;
                                                                     width: 50%; height: 50%;    
                                                                 ">
                                                             </div>
@@ -461,7 +461,7 @@
                                         </div>
                                         <div class="col l-2-4 user-content__playlist-item">
                                             <div class="user-content__playlist-item-link">
-                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list4.webp) no-repeat center / cover;">
+                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list4.webp) no-repeat center / contain;">
                                                 </div>
                                                 <div class="user-content__playlist-item-actions">
                                                     <div class="user-content__playlist-item-actions--like">
@@ -470,7 +470,7 @@
                                                     <div class="user-content__playlist-item-actions--play">
                                                         <i class="far fa-play-circle icon-play"></i>
                                                         <div class="wave-playing">
-                                                            <div style="background: url(./assets/img/icon-playing.gif) no-repeat 50% / contain;
+                                                            <div style="background: url(./assets/img/icon-playing.gif) no-repeat 50% / cover;
                                                                     width: 50%; height: 50%;    
                                                                 ">
                                                             </div>
@@ -488,7 +488,7 @@
                                         </div>
                                         <div class="col l-2-4 user-content__playlist-item">
                                             <div class="user-content__playlist-item-link">
-                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list5.webp) no-repeat center / cover;">
+                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list5.webp) no-repeat center / contain;">
                                                 </div>
                                                 <div class="user-content__playlist-item-actions">
                                                     <div class="user-content__playlist-item-actions--like">
@@ -497,7 +497,7 @@
                                                     <div class="user-content__playlist-item-actions--play">
                                                         <i class="far fa-play-circle icon-play"></i>
                                                         <div class="wave-playing">
-                                                            <div style="background: url(./assets/img/icon-playing.gif) no-repeat 50% / contain;
+                                                            <div style="background: url(./assets/img/icon-playing.gif) no-repeat 50% / cover;
                                                                     width: 50%; height: 50%;    
                                                                 ">
                                                             </div>
@@ -515,7 +515,7 @@
                                         </div>
                                         <div class="col l-2-4 user-content__playlist-item">
                                             <div class="user-content__playlist-item-link">
-                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list6.webp) no-repeat center / cover;">
+                                                <div class="user-content__playlist-item-img" style="background: url(./assets/img/playlist/list6.webp) no-repeat center / contain;">
                                                 </div>
                                                 <div class="user-content__playlist-item-actions">
                                                     <div class="user-content__playlist-item-actions--like">
@@ -524,7 +524,7 @@
                                                     <div class="user-content__playlist-item-actions--play">
                                                         <i class="far fa-play-circle icon-play"></i>
                                                         <div class="wave-playing">
-                                                            <div style="background: url(./assets/img/icon-playing.gif) no-repeat 50% / contain;
+                                                            <div style="background: url(./assets/img/icon-playing.gif) no-repeat 50% / cover;
                                                                     width: 50%; height: 50%;    
                                                                 ">
                                                             </div>
@@ -579,7 +579,7 @@
                                         </div>                                  
                                     </div>
                                     <div class="user-content__main user-songs row">
-                                        <div class="col l-12 user-content__main__playlist">                                            
+                                        <div class="col l-12 m-12 c-12 user-content__main__playlist">                                            
                                             <ul class="user__playlist">
                                                 
                                             </ul>    
