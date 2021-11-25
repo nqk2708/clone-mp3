@@ -795,6 +795,9 @@ label {
 .user-content__main.user-songs .user__playlist-item-left-icon{
     display: block;
 }
+.user-content__main.user-songs .user__playlist-item {
+    border-bottom: 1px solid var(--bg-primary);
+}
 
 .user__playlist-item-left {
     width: 50%;
@@ -900,7 +903,6 @@ label {
 /* Playlist Overview */
 
 .user-content__playlists-wrap {
-    /* padding-bottom: 16px; */
 }
 
 .user-content__playlist__create-playlist {
