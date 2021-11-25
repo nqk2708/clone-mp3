@@ -356,18 +356,20 @@ const app = {
 
         // Khi ấn Play 1 playlist bất kỳ
         const listPlayBtns = selectorAll('.user-content__playlist-item-actions--play')
-        listPlayBtns.forEach((listPlayBtn, index) => {
+        listPlayBtns.forEach((listPlayBtn) => {
             listPlayBtn.onclick = () => {
-                if (index > 2) {                    
+                const listIndex = Number(listPlayBtn.dataset.index)
+                if (listIndex > 2) {                    
                     showNotificationToast('Playlist này hiện chưa được cập nhật, bạn vui lòng chọn 3 playlist đầu tiên!')                    
                 }
                 else {
-                    const listOverview = getParent(listPlayBtn, '.user-content__playlist-item-link')
+                    const playlistLists = selectorAll('.user-content__playlist-item-link')
                     if(selector('.user-content__playlist-item-link.active')) {
-                        selector('.user-content__playlist-item-link.active').classList.remove('active')
+                        selectorAll('.user-content__playlist-item-link.active').forEach(item => item.classList.remove('active'))
                     } 
-                    listOverview.classList.add('active')
-                    app.currentPlaylist = index
+                    playlistLists[listIndex].classList.add('active')
+                    playlistLists[playlistLists.length / 2 + listIndex].classList.add('active')
+                    app.currentPlaylist = listIndex
                     app.imgIndex = 2
                     app.renderSongs()
                     app.renderSlideOverview()                

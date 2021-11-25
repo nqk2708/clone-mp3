@@ -900,7 +900,7 @@ label {
 /* Playlist Overview */
 
 .user-content__playlists-wrap {
-    padding-bottom: 16px;
+    /* padding-bottom: 16px; */
 }
 
 .user-content__playlist__create-playlist {
@@ -924,6 +924,7 @@ label {
 .user-content__playlist-item {
     height: 260px;
     background-clip: content-box;
+    margin-bottom: 16px;
 }
 
 .user-content__playlist-item-link {
