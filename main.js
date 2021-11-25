@@ -15,6 +15,10 @@ Array.from(navList).map((navItem, index) => navItem.onclick = (e) => {
         }
         contentContainers[index].classList.add('active')
     }
+    else {
+        showNotificationToast('Tính năng hiện chưa được cập nhật, bạn vui lòng thông cảm!')
+    }
+
     if(selector('.sidebar__nav-item.active')){
         selector('.sidebar__nav-item.active').classList.remove('active')
     }
@@ -44,6 +48,10 @@ Array.from(userNavList).map((navItem, index) => navItem.onclick = (e) => {
         }
         userContentList[index].classList.add('active')
     }
+    else {
+        showNotificationToast('Tính năng hiện chưa được cập nhật, bạn vui lòng thông cảm!')
+    }
+
     if(selector('.user-navbar__item.active')){
         selector('.user-navbar__item.active').classList.remove('active')
     }
@@ -68,23 +76,6 @@ const volumeBtn = selector('.vol-btn')
 const volControl = selector('.vol-control')
 const gifPlaying = selectorAll('.user__playlist-item__playing')
 
-// Handle slide show
-// let imgIndex = 2;
-// (function slideShow() {
-//     const slideImgFirst = selector('.container__slide-item.first')
-//     const slideImgSecond = selector('.container__slide-item.second')
-//     const slideImgThird = slideImgs[imgIndex]
-//     const slideImgFourth = slideImgs[imgIndex === slideImgs.length -1 ?  0 : imgIndex + 1]
-//     slideImgFourth.classList.replace('fourth', 'third')
-//     slideImgThird.classList.replace('third', 'second')
-//     slideImgSecond.classList.replace('second', 'first')
-//     slideImgFirst.classList.replace('first', 'fourth')
-//     imgIndex++;
-//     if(imgIndex >= slideImgs.length) {
-//         imgIndex = 0;
-//     }
-//     setTimeout(slideShow, 2000)
-// })()
 
 const app = {
     songs: JSON.parse(localStorage.getItem(SONG_PLAYLISTS_KEY) || '[]'),
@@ -367,17 +358,22 @@ const app = {
         const listPlayBtns = selectorAll('.user-content__playlist-item-actions--play')
         listPlayBtns.forEach((listPlayBtn, index) => {
             listPlayBtn.onclick = () => {
-                const listOverview = getParent(listPlayBtn, '.user-content__playlist-item-link')
-                if(selector('.user-content__playlist-item-link.active')) {
-                    selector('.user-content__playlist-item-link.active').classList.remove('active')
-                } 
-                listOverview.classList.add('active')
-                app.currentPlaylist = index
-                app.imgIndex = 2
-                app.renderSongs()
-                app.renderSlideOverview()                
-                app.loadCurrentSong()
-                audio.play()
+                if (index > 2) {                    
+                    showNotificationToast('Playlist này hiện chưa được cập nhật, bạn vui lòng chọn 3 playlist đầu tiên!')                    
+                }
+                else {
+                    const listOverview = getParent(listPlayBtn, '.user-content__playlist-item-link')
+                    if(selector('.user-content__playlist-item-link.active')) {
+                        selector('.user-content__playlist-item-link.active').classList.remove('active')
+                    } 
+                    listOverview.classList.add('active')
+                    app.currentPlaylist = index
+                    app.imgIndex = 2
+                    app.renderSongs()
+                    app.renderSlideOverview()                
+                    app.loadCurrentSong()
+                    audio.play()
+                }
             }
         })
     },
